@@ -27,6 +27,8 @@ According to the anaylsis above, the weather does not change significantly from 
 
 As per the analysis above, the temprature during the months of June and December doesnt change that much, however, another consideration for the tourist will be the amount of rainfall receivied during those two months. We can insert queries on overview the presicipation recevied by the city speficifically in those months.
 
+### As per the images below we can determine that 
+
   `June_prcp = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
   list(June_prcp)`
 
@@ -36,4 +38,4 @@ As per the analysis above, the temprature during the months of June and December
   list(Dec_prcp)``
 
 
-![June Data](https://github.com/div1085/surfs_up./blob/580b7339c692092baf5c6c599794e6e19f8e28cd/Resources/Screen%20Shot%202021-11-01%20at%208.52.47%20AM.png).: ![Dec Data](https://github.com/div1085/surfs_up./blob/c27816f67699afcfe45f1917a91e61d5ad3a7bf2/Resources/dec%20temp%20.png).
+![June Data](https://github.com/div1085/surfs_up./blob/580b7339c692092baf5c6c599794e6e19f8e28cd/Resources/Screen%20Shot%202021-11-01%20at%208.52.47%20AM.png).: ![Dec Data](https://github.com/div1085/surfs_up./blob/6adf41820cf4d38eab0314b74d131ad3f5d2c753/Resources/Screen%20Shot%202021-11-01%20at%209.04.17%20AM.png).
